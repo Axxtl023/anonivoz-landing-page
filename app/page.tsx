@@ -16,20 +16,20 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           {/* Logo + nombre */}
           <div className="flex items-center gap-2">
-            <div className="bg-blue-600 p-1.5 rounded-lg">
+            <div className="bg-brand-primary p-1.5 rounded-lg">
               <Shield className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold text-slate-800 tracking-tight">
-              Anoni<span className="text-blue-600">Voz</span>
+              Anoni<span className="text-brand-primary">Voz</span>
             </span>
           </div>
 
-          {/* CTA administrativo */}
+          {/* CTA administrativo — texto blanco garantizado por ratio 19:1 sobre #0b1120 */}
           <a
             href="https://anonivoz-dashboard-qiso3sbvx-emilyp131204-8852s-projects.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors duration-150"
+            className="flex items-center gap-1.5 bg-brand-primary hover:bg-brand-hover active:scale-[0.98] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-150"
           >
             Acceso Administrativo
             <ExternalLink className="w-3.5 h-3.5" />
@@ -40,7 +40,8 @@ export default function Home() {
       <main className="flex-1">
 
         {/* ── HERO ── */}
-        <section className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 overflow-hidden">
+        {/* Gradiente de #0b1120 (noche) a #1e3a6e (azul marino) para dar profundidad */}
+        <section className="relative bg-gradient-to-br from-brand-primary to-[#1e3a6e] overflow-hidden">
           {/* Círculos decorativos de fondo */}
           <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
             <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/5" />
@@ -55,17 +56,19 @@ export default function Home() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
               Alza tu voz de forma{" "}
-              <span className="text-blue-200">segura y anónima</span>
+              {/* slate-300 sobre fondo oscuro: contraste ~7.5:1, cumple WCAG AAA */}
+              <span className="text-slate-300">segura y anónima</span>
             </h1>
 
-            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-blue-100 leading-relaxed">
+            {/* slate-200 sobre fondo oscuro: contraste ~10:1, cumple WCAG AAA */}
+            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-200 leading-relaxed">
               Los estudiantes pueden reportar situaciones de acoso escolar{" "}
               <strong className="text-white font-semibold">sin revelar su identidad</strong>{" "}
               a través de un bot de Telegram. Las autoridades de tu institución
               recibirán el reporte de forma directa y confidencial.
             </p>
 
-            <div className="mt-10 flex items-center justify-center gap-2 text-blue-200 text-sm">
+            <div className="mt-10 flex items-center justify-center gap-2 text-slate-300 text-sm">
               <TelegramLogo className="w-5 h-5" />
               Funciona directamente desde Telegram — sin apps extra
             </div>
@@ -94,13 +97,14 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="group relative bg-white border border-slate-200 rounded-2xl p-8 flex flex-col items-center gap-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer"
               >
-                {/* Ícono de Telegram con color de marca */}
+                {/* Color #229ED9 es el azul oficial de Telegram — se preserva intencionalmente */}
                 <div className="w-20 h-20 rounded-2xl bg-[#229ED9] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
                   <TelegramLogo className="w-11 h-11 text-white" />
                 </div>
 
                 <div className="text-center">
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+                  {/* brand-primary como acento de etiqueta — jerarquía clara sobre fondo blanco */}
+                  <p className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-1">
                     Unidad Educativa
                   </p>
                   <h3 className="text-xl font-bold text-slate-800 leading-snug">
@@ -108,7 +112,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <span className="flex items-center gap-2 bg-blue-600 group-hover:bg-blue-700 text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-colors duration-150">
+                <span className="flex items-center gap-2 bg-brand-primary group-hover:bg-brand-hover active:scale-[0.98] text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-all duration-150">
                   Reportar ahora
                   <ChevronRight className="w-4 h-4" />
                 </span>
@@ -126,7 +130,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+                  <p className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-1">
                     Unidad Educativa
                   </p>
                   <h3 className="text-xl font-bold text-slate-800 leading-snug">
@@ -134,7 +138,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <span className="flex items-center gap-2 bg-blue-600 group-hover:bg-blue-700 text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-colors duration-150">
+                <span className="flex items-center gap-2 bg-brand-primary group-hover:bg-brand-hover active:scale-[0.98] text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-all duration-150">
                   Reportar ahora
                   <ChevronRight className="w-4 h-4" />
                 </span>
@@ -156,11 +160,12 @@ export default function Home() {
               </p>
             </div>
 
+            {/* brand-surface (--color-brand-surface: #eef0f5) reemplaza bg-blue-50 */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
 
               {/* Característica 1: Anonimato Total */}
-              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-blue-50 border border-blue-100">
-                <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm flex-shrink-0">
+              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-brand-surface border border-brand-primary/10">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center shadow-sm flex-shrink-0">
                   <EyeOff className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -173,8 +178,8 @@ export default function Home() {
               </div>
 
               {/* Característica 2: Gestión Directa */}
-              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-blue-50 border border-blue-100">
-                <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm flex-shrink-0">
+              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-brand-surface border border-brand-primary/10">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center shadow-sm flex-shrink-0">
                   <Users className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -189,8 +194,8 @@ export default function Home() {
               </div>
 
               {/* Característica 3: Entorno Seguro */}
-              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-blue-50 border border-blue-100">
-                <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm flex-shrink-0">
+              <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-brand-surface border border-brand-primary/10">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center shadow-sm flex-shrink-0">
                   <Shield className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -213,18 +218,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Marca */}
           <div className="flex items-center gap-2">
-            <div className="bg-blue-500 p-1 rounded-md">
+            <div className="bg-brand-primary p-1 rounded-md">
               <Shield className="w-4 h-4 text-white" />
             </div>
             <span className="text-white font-bold text-base tracking-tight">
-              Anoni<span className="text-blue-400">Voz</span>
+              {/* brand-muted (#8b95b3) es legible sobre slate-800 y mantiene el acento de marca */}
+              Anoni<span className="text-brand-muted">Voz</span>
             </span>
           </div>
 
           {/* Mensaje de apoyo */}
           <p className="text-sm text-center sm:text-right">
             Comprometidos con la{" "}
-            <span className="text-blue-400 font-medium">convivencia escolar segura</span>.
+            <span className="text-brand-muted font-medium">convivencia escolar segura</span>.
             Juntos construimos entornos libres de acoso.
           </p>
         </div>

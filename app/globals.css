@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* ── Paleta de marca AnoniVoz ── */
+/* En Tailwind v4 los colores personalizados se registran aquí en lugar de tailwind.config.ts */
+@theme {
+  --color-brand-primary: #0b1120;   /* color principal — azul noche */
+  --color-brand-hover:   #1a2744;   /* hover: versión más clara para retroalimentación visual */
+  --color-brand-surface: #eef0f5;   /* reemplaza bg-blue-50 en tarjetas de características */
+  --color-brand-muted:   #8b95b3;   /* acento suave en footer (reemplaza text-blue-400) */
+}
