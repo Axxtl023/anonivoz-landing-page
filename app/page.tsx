@@ -26,7 +26,7 @@ export default function Home() {
 
           {/* CTA administrativo — texto blanco garantizado por ratio 19:1 sobre #0b1120 */}
           <a
-            href="https://anonivoz-dashboard-qiso3sbvx-emilyp131204-8852s-projects.vercel.app"
+            href="https://anonivoz-dashboard.vercel.app/login"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 bg-brand-primary hover:bg-brand-hover active:scale-[0.98] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-150"
